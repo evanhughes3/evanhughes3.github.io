@@ -1,62 +1,7 @@
-article, aside, footer, header, main, nav, section {
-  display: block;
-}
-
-html, body, h1, h2, h3, ul, li, a, p,
-article, aside, footer, header, nav, section {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #F5F5F5;
-}
-
-.banner {
-  width: 100%;
-  height: 75px;
-  background-color: #708090;
-  color:white;
-  border-bottom: 2px solid black;
-  padding-top: 50px;
-  padding-left: 50px;
-  text-align: left;
-  font-family: Arial;
-}
-
-main {
-  width: 960px;
-  margin-left: 50px;
-  margin-right: auto;
-  float: left;
-}
-
-nav {
-  height: 40px;
-  background-color: #800000;
-  color: black;
-  padding: 5px;
-  text-align: center;
-  line-height: 40px;
-}
-
-nav li {
-  display: inline;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-weight: bold;
-}
-
-nav li a {
-  color:white;
-  font-size: 20px;
-  padding: 0px 60px;
-}
-
 .my-blog {
   width: 100%;
   height: 150px;
-  background-color: black;
+  background-color: rgb(105, 33, 33);
   color: white;
   padding-left: 50px;
   padding-top: 50px;
@@ -64,7 +9,7 @@ nav li a {
 }
 
 section {
-  background-color: #bbbbbb;
+  background-color: #E2E2E2;
   padding: 20px;
   margin-left: 10px;
 }
@@ -73,8 +18,20 @@ section h1, h2, h3, h4 {
   text-align: center;
 }
 
+section h1, h2, h3, h4 {
+  text-align: center;
+}
+
+section a {
+  color: black;
+}
+
+section a:hover {
+  color: #800000;
+}
+
 aside {
-  background-color: #bbbbbb;
+  background-color: #E2E2E2;
   width: 200px;
   height: 200px;
   float: right;
@@ -100,17 +57,14 @@ aside ul li a {
   color: black;
 }
 
-footer {
-  height: 40px;
-  width: 100%;
-  background-color: black;
-  color: white;
-  padding-top: 5px;
-  clear: both;
-  font-size: 14spx;
-  text-align: center;
+.main {
+height: 400px;
+width: 100%;
+background: white;
 }
 
-footer a {
-  color: white;
+div.img-container img {
+  width: 300px;
+  position: relative;
+  margin-left: 290px;
 }
