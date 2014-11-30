@@ -110,3 +110,7 @@ height: 400px;
 width: 100%;
 background: white;
 }
+
+aside a:hover {
+    color: #800000;
+}

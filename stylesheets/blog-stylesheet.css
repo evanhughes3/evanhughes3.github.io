@@ -8,14 +8,21 @@
   font-size: 16px;
 }
 
-section {
-  background-color: #E2E2E2;
-  padding: 20px;
-  margin-left: 10px;
+article {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 150%;
 }
 
-section h1, h2, h3, h4 {
-  text-align: center;
+section {
+  width: 75%;
+  background-color: #E2E2E2;
+  padding: 20px;
+  margin-left: 90px;
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 section h1, h2, h3, h4 {
@@ -39,6 +46,7 @@ aside {
   margin-right: 30px;
   margin-top: 30px;
   text-align: center;
+  border-radius: 20px;
 }
 
 aside ul {
@@ -57,14 +65,17 @@ aside ul li a {
   color: black;
 }
 
+aside ul li a:hover {
+
+
 .main {
 height: 400px;
 width: 100%;
 background: white;
 }
 
-div.img-container img {
+.img-container {
   width: 300px;
   position: relative;
-  margin-left: 290px;
+  border: 1px solid black;
 }

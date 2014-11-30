@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display Properties in CSS</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/t2-css-design.css">
+</head>
+<body>
+  <header class="banner">
+    <h1>Evan Hughes' Dev Bootcamp Page</h1>
+    <div id="social-media">
+      <ul>
+        <li><a href="https://github.com/evanhughes3">GitHub</a></li>
+        <li><a href="https://twitter.com/EvanHughes333">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/evanhughes333">Facebook</a></li>
+        <li><a href="https://plus.google.com/114186179917450271470/posts">Google+</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav>
+   <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Projects</a></li>
+     <li><a href="../blog_index.html">Blog</a></li>
+     <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+<header class="my-blog">
+  <h1>Hello!  My name is Evan Hughes.<br><br>
+  Welcome to my blog!</h1>
+</header>
+
+<main>
+    <section>
+        <h1>Display Properties in CSS</h1>
+        <h3>Inline, Block, and Inline-Block </h3>
+        <h4>11/30/14</h4>
+        <div class="img-container">
+        <img src="../imgs/css-blocks.jpg"></a>
+        </div>
+        <article><br>
+          <p>This week we have been learning about css and html, to markup languages that make websites look pretty.  Upon building a website, one aspect that you are sure to come across is how to display your elements on a page.  Putting a box here and a box there may not be as easy as you think.  But once you understand the "display" property in css, it becomes a lot easier.  The three "display" properties were going to talk about are: block, inline-block, and inline.  The css syntax looks like this:</p>
+          <br>
+
+          <h3><strong>inline</strong></h3><br>
+          <p> Inline elements do exactly as you may think, they display elements "in a line." A horizontal line to be clear.  They allow other elements to reside to their left and right.  A really good example of when you would want to display inline elements is for a navagation bar.  For example:
+            <br>
+            <br>
+          html:<br>
+          <br>
+          &lt;div class="inline"&gt;<br>
+          &lt;ul&gt;<br>
+            &lt;li&gt;Nav1&lt;/li&gt;<br>
+            &lt;li&gt;Nav2&lt;/li&gt;<br>
+            &lt;li&gt;Nav3&lt;/li&gt;<br>
+          &lt;/ul&gt;<br>
+        &lt;/div&gt;<br>
+        <br>
+          css:<br>
+          <br>
+           .inline {<br>
+            text-align: center;<br>
+          }<br>
+        <br>
+          .inline li {<br>
+            <strong>display: inline;</strong><br>
+            border: 2px solid black;<br>
+            margin: 0px 20px;<br>
+          }<br>
+          <br>
+      <p>Would display...</p><br>
+      <br>
+       <div class="inline">
+         <ul>
+            <li>Nav1</li>
+            <li>Nav2</li>
+            <li>Nav3</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <h3><strong>block</strong></h3><br>
+        <p>Block elements are the bulkiest of the 3 options.  They take up the entire width of the page.  You cannot put anything next to them.  For example:<br>
+          <br>
+          html:<br>
+          <br>
+        &lt;div id="block1"&gt;&lt;/div&gt;<br>
+        &lt;div id="block2"&gt;&lt;/div&gt;<br>
+        <br>
+        css:<br>
+        <br>
+          #block1 {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: blue;<br>
+        border: 2px solid black;<br>
+        margin: 10px;<br>
+        <strong>display: block;</strong><br>
+      }<br>
+      <br>
+      #block2 {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: red;<br>
+        border: 2px solid black;<br>
+        margin: 10px;<br>
+        <strong>display: block;</strong><br>
+      }<br>
+      <br>
+      <p>would display...<br>
+        <br>
+          <div id="block1"></div>
+        <div id="block2"></div>
+        <br><br>
+        <h3><strong>inline-block</strong></h3><br>
+        <br>
+        <p> Which brings us to the 3rd variation, and combination of the first two.  Inline-block elements are block elements that allow other elements to be next to them.  It behaves as a block element would, but looks on the page like an inline element.  Let's see what happens when I copy the example above, but change "display" to "inline-block".<br>
+          <br>
+          html:<br>
+          <br>
+        &lt;div id="inline-block1"&gt;&lt;/div&gt;<br>
+        &lt;div id="inline-block2"&gt;&lt;/div&gt;<br>
+        <br>
+        css:<br>
+        <br>
+          #block1 {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: blue;<br>
+        border: 2px solid black;<br>
+        margin: 10px;<br>
+        <strong>display: inline-block;</strong><br>
+      }<br>
+      <br>
+      #block2 {<br>
+        width: 100px;<br>
+        height: 100px;<br>
+        background-color: red;<br>
+        border: 2px solid black;<br>
+        margin: 10px;<br>
+        <strong>display: inline-block;</strong><br>
+      }<br>
+      <br>
+      <p>would display...<br>
+        <br>
+          <div id="inline-block1"></div>
+        <div id="inline-block2"></div>
+        <br><br>
+        <p> Now imagine instead of colored boxes, these elements are pictures, or text boxes, or navigation bars, or ads to be displayed on your webpage.  Positioning these elements, and understand how to display them will put you well on your way!<br>
+        <br>
+        Thanks for reading!<br>
+        <br>
+        -Evan
+
+
+  </section>
+</main>
+
+<aside>
+  <h2>Topics</h2>
+    <ul>
+      <li><a href="#">Techincal</a></li>
+      <li><a href="#">Cultural</a></li>
+      <li><a href="#">Something Else</a></li>
+      <li><a href="#">Another One</a></li>
+    </ul>
+</aside>
+<aside>
+    <h2>Blog History</h2>
+    <ul>
+      <li><a href="#">November</a></li>
+      <li><a href="#">October</a></li>
+      <li><a href="#">September</a></li>
+      <li><a href="#">August</a></li>
+    </ul>
+</aside>
+<footer>
+  <p> <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Projects</a> |
+    <a href="#">Blog</a> |
+    <a href="#">Contact</a> |
+  </p>
+  <p> Created by Evan Hughes 2014 </p>
+</footer>
+</body>
+</html>
+
