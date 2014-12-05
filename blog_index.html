@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog Homepage</title>
+  <title>Blog Home</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
 </head>
 <body>
   <header class="banner">
-    <h1>Evan Hughes' Dev Bootcamp Page</h1>
+  <img id="banner-photo" src="imgs/banner-photo.jpg" / >
     <div id="social-media">
       <ul>
-        <li><a href="https://github.com/evanhughes3">GitHub</a></li>
-        <li><a href="https://twitter.com/EvanHughes333">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4">LinkedIn</a></li>
-        <li><a href="https://www.facebook.com/evanhughes333">Facebook</a></li>
-        <li><a href="https://plus.google.com/114186179917450271470/posts">Google+</a></li>
+        <li>><a href="https://github.com/evanhughes3"><img src="imgs/social_media_icons/Github.png" /></a></li>
+        <li><a href="https://twitter.com/EvanHughes333"><img src="imgs/social_media_icons/Twitter.png" /></a></li>
+        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4"><img src="imgs/social_media_icons/Linkedin.png" /></a></li>
+        <li><a href="https://www.facebook.com/evanhughes333"><img src="imgs/social_media_icons/Facebook.png" /></a></li>
+        <li><a href="https://plus.google.com/114186179917450271470/posts"><img src="imgs/social_media_icons/Googleplus.png" /></a></li>
       </ul>
     </div>
   </header>
   <nav>
    <ul>
      <li><a href="./index.html">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Projects</a></li>
+     <li><a href="./about.html">About</a></li>
+     <li><a href="./projects_index.html">Projects</a></li>
      <li><a href="./blog_index.html">Blog</a></li>
-     <li><a href="#">Contact</a></li>
+     <li><a href="./contact.html">Contact</a></li>
     </ul>
   </nav>
-<header class="my-blog">
-  <h1>Hello!  My name is Evan Hughes.<br><br>
-  Welcome to my blog!</h1>
-</header>
+
+<!--               - -->
+
 <main>
+   <header class="my-blog">
+  <img id="banner-photo" src="imgs/blog_title.jpg" / >
+  </header>
+
+  <!--  -->
+
+  <aside>
+  <h2>Topics</h2>
+    <ul>
+      <li><a href="blog/t3-arrays-hashes.html">Arrays & Hashes</a></li>
+      <li><a href="gps/gps1-2.html">GPS HTML page</a></li>
+      <li><a href="blog/t2-css-design.html">HTML & CSS</a></li>
+      <li><a href="blog/c1-chefs-kitchen.html">Culture at DBC</a></li>
+      <li><a href="blog/t1-git-blog.html">git & GitHub</a></li>
+    </ul>
+</aside>
+
+<!--  -->
       <section>
+        <article>
+        <h1><a href="blog/t3-arrays-hashes.html">Arrays & Hashes in Ruby</h1>
+        <h3>12/5/14</h3>
+        <br>
+        <center><img src="imgs/hash.jpg" /></a></center>
+          <h4>This week we began our journey into Ruby, the programming language of all programming languages.  It has been a great experience.  Ruby is prized for being relatively intuitive as far as programming languages go.  I want to highlight two key features that make storing and accessing data incredibly simple, Arrays and Hashes...</h4>
+          <h3><a href="blog/t3-arrays-hashes.html">Read More...</a></h3>
+        </article>
+        <br>
+        <br>
+        <article>
         <h1><a href="blog/t2-css-design.html">Display Properties in CSS</h1>
         <h3>Inline, Block, and Inline-Block</h3>
         <h3>11/30/14</h3>
         <br>
         <div class="img-container">
-        <img src="imgs/css-blocks.jpg"></a>
-        </div>
-        <article>
+        <center><img src="imgs/css-blocks.jpg" /></div></a></center>
           <h4>This week we have been learning about css and html, to markup languages that make websites look pretty.  Upon building a website, one aspect that you are sure to come across is how to display your elements on a page.  Putting a box here and a box there may not be as easy as you think.  But once you understand the "display" property in css, it becomes a lot easier....</h4>
           <h3><a href="blog/t2-css-design.html">Read More...</a></h3>
         </article>
@@ -49,15 +75,14 @@
         <br>
 
 
-    <section>
+    <article>
         <h1><a href="blog/c1-chefs-kitchen.html">Kitchen Vs Table</h1>
         <h3>My Thoughts on the culture at DBC</h3>
         <h3>11/20/14</h3>
         <br>
         <div class="img-container">
-        <img src="imgs/kitchen_table.jpg"></a>
+        <center><img src="imgs/kitchen_table.jpg"></center></a>
         </div>
-        <article>
           <h4>After watching Shareef's Fireside Chat, I feel confident in the structure and philosophy they have established here at Dev Bootcamp.  I thought his point about us living our lives as consumers was very accurate.  We so often look at the outcome of an action before it has even started, completely missing the fact that the process is more important than the outcome...</h4>
           <h3><a href="blog/c1-chefs-kitchen.html">Read More...</a></h3>
         </article>
@@ -65,41 +90,25 @@
         <br>
 
 
-      <section>
+      <article>
         <h1><a href="blog/t1-git-blog.html">Week1 - Command Line, Git, and GitHub</h1>
         <h3>11/20/14</h3>
         <br>
         <div class="img-container">
-        <img src="imgs/git_img.jpg"></a>
+        <center><img src="imgs/git_img.jpg"></a></center>
         </div>
-        <article><br>
+        <br>
           <h4>First of all, hello everyone, and welcome to my first blog post for Dev Bootcamp Phase 0!  It's been a really interesting week diving into this new material, and I'm excited to showcase some of the things I'm learning on this blog...</h4><br>
           <h3><a href="blog/t1-git-blog.html">Read More...</a></h3>
         </article>
-      </section>
 </main>
-
-<aside>
-  <h2>Topics</h2>
-    <ul>
-      <li><a href="blog/t2-css-design.html">HTML & CSS</a></li>
-      <li><a href="blog/c1-chefs-kitchen.html">Culture at DBC</a></li>
-      <li><a href="blog/t1-git-blog.html">git & GitHub</a></li>
-    </ul>
-</aside>
-<aside>
-    <h2>Blog History</h2>
-    <ul>
-      <li><a href="">November</a></li>
-    </ul>
-</aside>
 
 <footer>
   <p> <a href="./index.html">Home</a> |
-    <a href="#">About</a> |
-    <a href="#">Projects</a> |
-    <a href="#">Blog</a> |
-    <a href="#">Contact</a> |
+    <a href="./about.html">About</a> |
+    <a href="./projects_index.html">Projects</a> |
+    <a href="./blog_index.html">Blog</a> |
+    <a href="./contact.html">Contact</a> |
   </p>
   <p> Created by Evan Hughes 2014 </p>
 </footer>

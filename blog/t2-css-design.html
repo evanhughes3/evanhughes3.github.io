@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Display Properties in CSS</title>
+  <title>Culture at DBC</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/t2-css-design.css">
 </head>
 <body>
   <header class="banner">
-    <h1>Evan Hughes' Dev Bootcamp Page</h1>
+  <img id="banner-photo" src="../imgs/banner-photo.jpg" / >
     <div id="social-media">
       <ul>
-        <li><a href="https://github.com/evanhughes3">GitHub</a></li>
-        <li><a href="https://twitter.com/EvanHughes333">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4">LinkedIn</a></li>
-        <li><a href="https://www.facebook.com/evanhughes333">Facebook</a></li>
-        <li><a href="https://plus.google.com/114186179917450271470/posts">Google+</a></li>
+        <li>><a href="https://github.com/evanhughes3"><img src="../imgs/social_media_icons/Github.png" /></a></li>
+        <li><a href="https://twitter.com/EvanHughes333"><img src="../imgs/social_media_icons/Twitter.png" /></a></li>
+        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4"><img src="../imgs/social_media_icons/Linkedin.png" /></a></li>
+        <li><a href="https://www.facebook.com/evanhughes333"><img src="../imgs/social_media_icons/Facebook.png" /></a></li>
+        <li><a href="https://plus.google.com/114186179917450271470/posts"><img src="../imgs/social_media_icons/Googleplus.png" /></a></li>
       </ul>
     </div>
   </header>
@@ -24,27 +23,31 @@
   <nav>
    <ul>
      <li><a href="../index.html">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Projects</a></li>
+     <li><a href="../about.html">About</a></li>
+     <li><a href="../projects_index.html">Projects</a></li>
      <li><a href="../blog_index.html">Blog</a></li>
-     <li><a href="#">Contact</a></li>
+     <li><a href="../contact.html">Contact</a></li>
     </ul>
   </nav>
 
-<header class="my-blog">
-  <h1>Hello!  My name is Evan Hughes.<br><br>
-  Welcome to my blog!</h1>
-</header>
+<!--               - -->
+<main>
+   <header class="my-blog">
+  <img id="banner-photo" src="../imgs/blog_title.jpg" / >
+  </header>
+
+<!--  -->
 
 <main>
-    <section>
+    <section class="blog-post">
+      <article>
         <h1>Display Properties in CSS</h1>
+        <br>
         <h3>Inline, Block, and Inline-Block </h3>
-        <h4>11/30/14</h4>
-        <div class="img-container">
-        <img src="../imgs/css-blocks.jpg"></a>
-        </div>
-        <article><br>
+        <br>
+        <center><img src="../imgs/css-blocks.jpg"></a></center>
+          <h4>11/30/14</h4>
+        <br>
           <p>This week we have been learning about css and html, to markup languages that make websites look pretty.  Upon building a website, one aspect that you are sure to come across is how to display your elements on a page.  Putting a box here and a box there may not be as easy as you think.  But once you understand the "display" property in css, it becomes a lot easier.  The three "display" properties were going to talk about are: block, inline-block, and inline.  The css syntax looks like this:</p>
           <br>
 
@@ -157,35 +160,20 @@
         Thanks for reading!<br>
         <br>
         -Evan
-
-
+      </article>
+          <div class="back-button">
+          <a href="../blog_index.html"><h4>Back to Blog Home</h4></a>
+        </div>
   </section>
 </main>
 
-<aside>
-  <h2>Topics</h2>
-    <ul>
-      <li><a href="#">Techincal</a></li>
-      <li><a href="#">Cultural</a></li>
-      <li><a href="#">Something Else</a></li>
-      <li><a href="#">Another One</a></li>
-    </ul>
-</aside>
-<aside>
-    <h2>Blog History</h2>
-    <ul>
-      <li><a href="#">November</a></li>
-      <li><a href="#">October</a></li>
-      <li><a href="#">September</a></li>
-      <li><a href="#">August</a></li>
-    </ul>
-</aside>
+
 <footer>
-  <p> <a href="#">Home</a> |
-    <a href="#">About</a> |
-    <a href="#">Projects</a> |
-    <a href="#">Blog</a> |
-    <a href="#">Contact</a> |
+  <p> <a href="./index.html">Home</a> |
+    <a href="./about.html">About</a> |
+    <a href="./projects_index.html">Projects</a> |
+    <a href="./blog_index.html">Blog</a> |
+    <a href="./contact.html">Contact</a> |
   </p>
   <p> Created by Evan Hughes 2014 </p>
 </footer>

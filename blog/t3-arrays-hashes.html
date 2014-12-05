@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays & Hashes in Ruby</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+  <header class="banner">
+  <img id="banner-photo" src="../imgs/banner-photo.jpg" / >
+    <div id="social-media">
+      <ul>
+        <li>><a href="https://github.com/evanhughes3"><img src="../imgs/social_media_icons/Github.png" /></a></li>
+        <li><a href="https://twitter.com/EvanHughes333"><img src="../imgs/social_media_icons/Twitter.png" /></a></li>
+        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4"><img src="../imgs/social_media_icons/Linkedin.png" /></a></li>
+        <li><a href="https://www.facebook.com/evanhughes333"><img src="../imgs/social_media_icons/Facebook.png" /></a></li>
+        <li><a href="https://plus.google.com/114186179917450271470/posts"><img src="../imgs/social_media_icons/Googleplus.png" /></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav>
+   <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="../about.html">About</a></li>
+     <li><a href="../projects_index.html">Projects</a></li>
+     <li><a href="../blog_index.html">Blog</a></li>
+     <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<!--               - -->
+<main>
+   <header class="my-blog">
+  <img id="banner-photo" src="../imgs/blog_title.jpg" / >
+  </header>
+
+<!--  -->
+
+<main>
+    <section class="blog-post">
+      <article>
+        <br>
+        <h1>Arrays & Hashes in Ruby</h1>
+        <br>
+        <br>
+        <center><img src="../imgs/hash.jpg"></a></center>
+          <h4>12/5/14</h4>
+        <br>
+        <p>This week we began our journey into Ruby, the programming language of all programming languages.  It has been a great experience.  Ruby is prized for being relatively intuitive as far as programming languages go.  I want to highlight two key features that make storing and accessing data incredibly simple, Arrays and Hashes.</p>
+        <br>
+          <p>Let’s start with Arrays.  Arrays are incredibly useful because they can hold a list of objects.  Say your friend Johnny is an incredibly picky eater.  You can store all of the foods Johnny will eat in an array called “johnny_food” like so:</p>
+          <br>
+          <code>johnny_food = [“pizza”, “spaghetti”, “burritos”, “cheeseburgers”, “tacos”, “french fries”, “lobster”]</code>
+            <br>
+            <br>
+            <p>Now just call the array</p>
+            <br>
+          <code>johnny_food<br>
+            => [“pizza”, “spaghetti”, “burritos”, “cheeseburgers”, “tacos”, “french fries”, “lobster”]</code>
+          <br>
+          <br>
+          <p>Why don’t you try some kale Johnny, huh?</p>
+          <br>
+          <p>So if we can’t remember what Johnny’s foods are, lets just call the array “johnny_food” and …BAM!...there’s our list.</p>
+          <br>
+          <p>Ok now let’s assume Johnny is on a diet.  He has to eat one of the foods on his list on a certain day of the week (…some diet Johnny!).  Lets say that our array is in order, starting on Monday, so that Monday he eats pizza, Tuesday he eats spaghetti, etc.  So how do we access these values?  It’s super easy.  Array’s are indexed by numbers, just keep in mind that the starting number is 0.  So the seven days of the week could be represented by index numbers 0-6.<p>
+            <br>
+          <p>For example:  What does Johnny eat on Thursday?  Thursday = day 4 = index number[3].<p>
+            <br>
+          <code>johnny_food[3] = cheeseburgers</code>
+          <br>
+          <br>
+          <p>Easy as that.  Now lets take a look at hashes.  Hashes are similar to array in the sense that they store multiple objects, the main difference is that a hash needs a KEY and a VALUE.</p>
+          <br>
+          <p>Here’s an example.  Johnny has a bunch of really picky friends, who are on the same diet as him.  Your having this horrible group of people over for dinner, how do you keep it straight?  Let’s make a hash.</p>
+          <br>
+          <p>The format looks like this:</p>
+          <br>
+          <code>hash = {<br>
+                  key => value<br>
+                  key => value<br>
+          }</code><br>
+          <br>
+          <p>so…</p>
+          <br>
+          <code>picky_eater = {<br>
+            <br>
+            “johnny” => “pizza”<br>
+            “timmy” => “spaghetti”<br>
+            “jimmy” => “burritos”<br>
+            “billy” => “cheeseburgers”<br>
+          }</code><br>
+          <br>
+          <p>What was it that Jimmy needed to eat today?  <code>puts picky_eater[“jimmy”] </code>and it will return <code>“burritos”</code>.  Pretty cool right?  It keeps your information nicely organized.</p>
+          <br>
+          <p>Disclaimer:  No one actually had to cook for these horribly picky eaters, and no one ever should.</p>
+          <br>
+          <p>-Evan</p>
+
+
+
+
+
+
+
+
+
+
+        </article>
+        <div class="back-button">
+          <a href="../blog_index.html"><h4>Back to Blog Home</h4></a>
+        </div>
+
+  </section>
+</main>
+
+<footer>
+  <p> <a href="./index.html">Home</a> |
+    <a href="./about.html">About</a> |
+    <a href="./projects_index.html">Projects</a> |
+    <a href="./blog_index.html">Blog</a> |
+    <a href="./contact.html">Contact</a> |
+  </p>
+  <p> Created by Evan Hughes 2014 </p>
+</footer>
+</body>
+</html>
+

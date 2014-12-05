@@ -1,7 +1,7 @@
 .main {
-  height: 500px;
+  height: 408px;
   width: 100%;
-  background: rgb(105, 33, 33);
+  background: #edefed;
 }
 
 #title-divider{
@@ -10,7 +10,6 @@
 }
 
 .evan-photo {
-  border: 4px solid black;
   display: inline-block;
   position: relative;
   left: 54px;
@@ -22,24 +21,42 @@
   float: right;
   /* border: 2px solid black; */
   position: relative;
-  right: 132px;
-  top: 65px;
-  color: rgb(211, 165, 165);
+  right: 176px;
+  top: 106px;
+  color: rgb(174, 128, 128);
+}
+
+.description a {
+    text-decoration: none;
+    color: rgb(174, 128, 128);
+}
+
+.description a:hover {
+      color: #800000;
 }
 
 aside {
-  background-color: #400D00;
+  background-color: #AD2F2F;
   color: white;
   width: 25%;
-  height: 250px;
-  border: 2px solid black;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
   display: inline-block;
   margin: 20px;
   padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100px;
 }
 
+aside:hover {
+    color: #800000;
+}
 aside h3 {
   text-align: center;
+  text-decoration: underline;
+
 }
 
 aside h3 a {
@@ -65,5 +82,12 @@ aside h3 a:hover {
 }
 
 .asides {
-  background: rgb(157, 144, 144);
+  background: rgb(226, 218, 218);
+  padding-left: 65px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.asides .hover a {
+    color: #800000;
 }

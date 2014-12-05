@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Evan Hughes' Blog</title>
+  <title>Culture at DBC</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 </head>
 <body>
   <header class="banner">
-    <h1>Evan Hughes' Dev Bootcamp Page</h1>
+  <img id="banner-photo" src="../imgs/banner-photo.jpg" / >
     <div id="social-media">
       <ul>
-        <li><a href="https://github.com/evanhughes3">GitHub</a></li>
-        <li><a href="https://twitter.com/EvanHughes333">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4">LinkedIn</a></li>
-        <li><a href="https://www.facebook.com/evanhughes333">Facebook</a></li>
-        <li><a href="https://plus.google.com/114186179917450271470/posts">Google+</a></li>
+        <li>><a href="https://github.com/evanhughes3"><img src="../imgs/social_media_icons/Github.png" /></a></li>
+        <li><a href="https://twitter.com/EvanHughes333"><img src="../imgs/social_media_icons/Twitter.png" /></a></li>
+        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4"><img src="../imgs/social_media_icons/Linkedin.png" /></a></li>
+        <li><a href="https://www.facebook.com/evanhughes333"><img src="../imgs/social_media_icons/Facebook.png" /></a></li>
+        <li><a href="https://plus.google.com/114186179917450271470/posts"><img src="../imgs/social_media_icons/Googleplus.png" /></a></li>
       </ul>
     </div>
   </header>
@@ -23,27 +23,32 @@
   <nav>
    <ul>
      <li><a href="../index.html">Home</a></li>
-     <li><a href="#">About</a></li>
-     <li><a href="#">Projects</a></li>
+     <li><a href="../about.html">About</a></li>
+     <li><a href="../projects_index.html">Projects</a></li>
      <li><a href="../blog_index.html">Blog</a></li>
-     <li><a href="#">Contact</a></li>
+     <li><a href="../contact.html">Contact</a></li>
     </ul>
   </nav>
 
-<header class="my-blog">
-  <h1>Hello!  My name is Evan Hughes.<br><br>
-  Welcome to my blog!</h1>
-</header>
+<!--               - -->
+<main>
+   <header class="my-blog">
+  <img id="banner-photo" src="../imgs/blog_title.jpg" / >
+  </header>
+
+<!--  -->
 
 <main>
-    <section>
-        <h1>Week1 - Command Line, Git, and GitHub
-</h1>
+    <section class="blog-post">
+      <article>
+        <h1>Week1 - Command Line, Git, and GitHub</h1>
+        <br>
+          <center><img src="../imgs/git_img.jpg" /><center>
         <h4>11/20/14</h4>
-        <article><br>
+        <br>
           <p>First of all, hello everyone, and welcome to my first blog post for Dev Bootcamp Phase 0!  It's been a really interesting week diving into this new material, and I'm excited to showcase some of the things I'm learning on this blog.</p>
           <br>
-          I think that Dev Bootcamp has set us up really well in this first week.  Instead of starting right into the code, we learned about using the command line, version control software, git, GitHub, Twitter, and other industry standard stuff.  In seeing how often I have used git and GitHub just in this first week, I can tell we're going to be using them A LOT, so a good understanding of how they work and why we use them is important.</p>
+          <p>I think that Dev Bootcamp has set us up really well in this first week.  Instead of starting right into the code, we learned about using the command line, version control software, git, GitHub, Twitter, and other industry standard stuff.  In seeing how often I have used git and GitHub just in this first week, I can tell we're going to be using them A LOT, so a good understanding of how they work and why we use them is important.</p>
           <br>
           <p>Version control software (like git) keeps track of all the changes your make to a file. If you have a file that’s working great, then you add something that screws everything else up, you can simply go back to the previous version, and save youself a ton of time.  In one of our lessons they mentioned the analogy of a "checkpoint" in a video game.</p>
           <br>
@@ -69,34 +74,18 @@
           <p>Thanks for reading!  Hopefully this makes sense!  Fiddler Crabs represent.
           -Evan</p>
         </article>
-
+        <div class="back-button">
+          <a href="../blog_index.html"><h4>Back to Blog Home</h4></a>
+        </div>
   </section>
 </main>
 
-<aside>
-  <h2>Topics</h2>
-    <ul>
-      <li><a href="#">Techincal</a></li>
-      <li><a href="#">Cultural</a></li>
-      <li><a href="#">Something Else</a></li>
-      <li><a href="#">Another One</a></li>
-    </ul>
-</aside>
-<aside>
-    <h2>Blog History</h2>
-    <ul>
-      <li><a href="#">November</a></li>
-      <li><a href="#">October</a></li>
-      <li><a href="#">September</a></li>
-      <li><a href="#">August</a></li>
-    </ul>
-</aside>
 <footer>
-  <p> <a href="#">Home</a> |
-    <a href="#">About</a> |
-    <a href="#">Projects</a> |
-    <a href="#">Blog</a> |
-    <a href="#">Contact</a> |
+  <p> <a href="./index.html">Home</a> |
+    <a href="./about.html">About</a> |
+    <a href="./projects_index.html">Projects</a> |
+    <a href="./blog_index.html">Blog</a> |
+    <a href="./contact.html">Contact</a> |
   </p>
   <p> Created by Evan Hughes 2014 </p>
 </footer>

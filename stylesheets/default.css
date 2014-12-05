@@ -9,7 +9,6 @@ article, aside, footer, header, nav, section {
 }
 
 html {
-  background: #ededed;
   font-family: sans-serif;
 }
 
@@ -18,59 +17,49 @@ body {
 }
 
 .banner {
-  width: 100%;
-  height: 75px;
-  background-color: #3C60A1;
-  color:white;
-  border-bottom: 2px solid black;
-  padding-top: 50px;
-  padding-left: 50px;
-  text-align: left;
-  font-family: sans-serif;
+  display: inline-block;
+  position: relative;
+  background-image: url("imgs/banner-photo.jpg");
+}
+
+#banner-photo {
+  margin: 0px;
 }
 
 #social-media {
   position: relative;
-  left: 1100px;
-  bottom: 70px;
+  bottom: 288px;
+  float: right;
+  margin-right: 10px;
 }
 
 #social-media ul {
   list-style-type: none;
-  color: white;
 }
 
-#social-media ul li a {
-  text-decoration: none;
-  color: white;
+#social-media li {
+    display: inline;
+    text-decoration: none;
 }
 
-#social-media ul li a:hover {
+#social-media ul li img a:hover {
   color: #800000;
 }
 
-main {
-  width: 960px;
-  margin-left: 50px;
-  margin-right: auto;
-  float: left;
-}
-
 nav {
-  height: 40px;
-  width: 100%;
-  background-color: #eb4e48;
+  height: 45px;
+ background-color: #AD2F2F;
   color: black;
-  padding: 5px;
   text-align: center;
-  line-height: 40px;
+  line-height: 45px;
+  border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
 
 nav li {
   display: inline;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
 }
 
@@ -92,7 +81,7 @@ footer {
   color: white;
   padding-top: 5px;
   clear: both;
-  font-size: 14spx;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -106,11 +95,7 @@ footer a:hover {
 
 
 .main {
-height: 400px;
+height: 300px;
 width: 100%;
 background: white;
-}
-
-aside a:hover {
-    color: #800000;
 }
