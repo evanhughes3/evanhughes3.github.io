@@ -17,8 +17,6 @@ body {
 }
 
 .banner {
-  display: inline-block;
-  position: relative;
   background-image: url("imgs/banner-photo.jpg");
 }
 
@@ -47,20 +45,23 @@ body {
 }
 
 nav {
-  height: 45px;
- background-color: #AD2F2F;
-  color: black;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  height: 40px;
+  background-color: #AD2F2F;
+  line-height: 40px;
   text-align: center;
-  line-height: 45px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+}
+
+nav ul {
+  display: table-row;
 }
 
 nav li {
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
+  display: table-cell;
+  margin: 0;
+  border-left: 2px solid black;
 }
 
 nav li a {
