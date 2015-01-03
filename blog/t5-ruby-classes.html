@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students in a Class</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+  <header class="banner">
+  <img id="banner-photo" src="../imgs/banner-photo.jpg" / >
+    <div id="social-media">
+      <ul>
+        <li>><a href="https://github.com/evanhughes3"><img src="../imgs/social_media_icons/Github.png" /></a></li>
+        <li><a href="https://twitter.com/EvanHughes333"><img src="../imgs/social_media_icons/Twitter.png" /></a></li>
+        <li><a href="https://www.linkedin.com/pub/evan-hughes/4a/ab8/1b4"><img src="../imgs/social_media_icons/Linkedin.png" /></a></li>
+        <li><a href="https://www.facebook.com/evanhughes333"><img src="../imgs/social_media_icons/Facebook.png" /></a></li>
+        <li><a href="https://plus.google.com/114186179917450271470/posts"><img src="../imgs/social_media_icons/Googleplus.png" /></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav>
+   <ul>
+     <li><a href="../index.html">Home</a></li>
+     <li><a href="../about.html">About</a></li>
+     <li><a href="../projects_index.html">Projects</a></li>
+     <li><a href="../blog_index.html">Blog</a></li>
+     <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+<!--               - -->
+<main>
+   <header class="my-blog">
+  <img id="banner-photo" src="../imgs/blog_title.jpg" / >
+  </header>
+
+<!--  -->
+
+<main>
+    <section class="blog-post">
+      <article>
+        <h1>Students in a Class</h1>
+        <br>
+        <h3></h3>
+        <center><img src="../imgs/students_in_class.jpg"></a></center>
+          <h4>1/2/15</h4>
+          <p>  Before starting here at Dev Bootcamp, I was a music teacher in NYC.  The first week of every "mod" (as it was called) was tough, as any teacher will tell you.  You have a room full of new kids, many of whom you have never seen before, and your job is to start connecting and instructing them right away.  I thought it would make sense to make a nice little ruby program to help me remember the students in my class.</p>
+
+          <p>A good way to do this is to use ruby classes and class methods.  A class is just what it seems, a group of objects with a similarity.  They may all be <code>Integers</code>, <code>Strings</code>, or you can make one up.  I decided to make a <code>Students</code> class, to include my students in.<p>
+
+            <pre>
+class Student
+end
+
+jimmy = Student.new</pre>
+
+            <p>Jimmy is the first student to be added to my <code>Students</code> class.  I want to give each student some info so that I can remember who is who.  A good way to do this is to initialize each student with attributes.  You can do this using the <code>initialize</code> method, which is a special ruby class method.  It will set those attributes to that Student when that student is created.  I want to remember my students by some key characteristics: name, age, grade, instrument.</p>
+<pre>
+class Student
+
+  def initialize(name, age, grade, instrument)
+    @name = name
+    @age = age
+    @grade = grade
+    @instrument = instrument
+  end
+
+end
+
+jimmy = Student.new("Jimmy", 15, 9, "drums")
+</pre>
+          <p>Now I have a student named "Jimmy", who is holding on to values that distiguish him.  I want to be able to easily access those values, so that if I forget what he does I can find out easily.  I'll create a method called <code>student_info</code>, which will give me all of the values, and then individual ones if I just want one value.</p>
+<pre>
+class Student
+
+  def initialize(name, age, grade, instrument)
+    @name = name
+    @age = age
+    @grade = grade
+    @instrument = instrument
+  end
+
+  def student_info
+      puts "#{@name} is a #{@age} year old #{@grade}th grader who plays the #{@instrument}."
+  end
+
+  def instrument
+    puts "#{@name} plays the #{@instrument}."
+  end
+
+  def age
+    puts "#{@name} is #{@age}."
+  end
+
+  def grade
+    puts "#{@name} is in #{@grade}th grade."
+  end
+
+end
+
+jimmy = Student.new("Jimmy", 15, 9, "drums")
+
+jimmy.student_info => Jimmy is a 15 year old 9th grader who plays the drums.
+jimmy.instrument => Jimmy plays the drums.
+jimmy.age => Jimmy is 15.
+jimmy.grade => Jimmy is in 9th grade.
+</pre>
+          <p>At the end of your class, you have to write a teacher report on your students, so I found it useful to write some comments down, so that at the end of the year, you could look back and see how your students behaved, if they we're responsible, completed assignments, etc.  So I found it benificial to write comments  about each student.  A good way to do this is to use an <code>attr_accessor </code>method, which creates a readable and writable method for your instance variable.  I'll call mine <code>comments</code>.  </p>
+<pre>
+class Student
+  attr_accessor :comments
+
+  def initialize(name, age, grade, instrument)
+      @name = name
+      @age = age
+      @grade = grade
+      @instrument = instrument
+  end
+
+  def student_info
+    puts "#{@name} is a #{@age} year old #{@grade}th grader who plays the #{@instrument}."
+      if @comments != nil
+        puts "-----Comments-----"
+        puts @comments
+        puts ""
+      end
+  end
+
+  def instrument
+    puts "#{@name} plays the #{@instrument}"
+  end
+
+  def age
+      puts "#{@name} is #{@age}"
+  end
+
+  def grade
+      puts "#{@name} is in #{@grade}th grade"
+  end
+
+end
+
+
+jimmy = Student.new("Jimmy", 15, 9, "drums")
+jimmy.comments = "10/1/10: Sounded really good!  11/10/10: Showed up late to class"
+
+jimmy.student_info => Jimmy is a 15 year old 9th grader who plays the drums.
+    -----Comments-----
+    10/1/10: Sounded really good!
+     11/10/10: Showed up late to class
+</pre>
+      <p> I'll include a couple more examples below of my whole class.</p>
+<pre>
+emily = Student.new("Emily", 17, 11, "piano")
+jonathan = Student.new("Jonathan", 15, 9, "bass")
+jonathan.comments = "Had a really good attitude"
+claire = Student.new("Claire", 16, 10, "alto saxophone")
+joseph = Student.new("Joseph", 18, 12, "trumpet")
+austin = Student.new("Austin", 17, 12, "bass")
+
+jonathan.student_info => Jonathan is a 15 year old 9th grader who plays the bass.
+    -----Comments-----
+    12/15/14: Had a really good attitude in class
+
+joseph.student_info =>  Joseph is a 18 year old 12th grader who plays the trumpet.
+austin.student_info  =>  Austin is a 17 year old 12th grader who plays the bass.
+
+claire.instrument =>  Claire plays the alto saxophone
+
+emily.grade => Emily is in 11th grade
+</pre>
+<p> And just like that, my class is easy to remember.  Now I have no excuse for pointing and saying, "Hey you!"</p>
+        </article>
+        <div class="back-button">
+          <a href="../blog_index.html"><h4>Back to Blog Home</h4></a>
+        </div>
+
+  </section>
+</main>
+
+<footer>
+  <p> <a href="./index.html">Home</a> |
+    <a href="./about.html">About</a> |
+    <a href="./projects_index.html">Projects</a> |
+    <a href="./blog_index.html">Blog</a> |
+    <a href="./contact.html">Contact</a> |
+  </p>
+  <p> Created by Evan Hughes 2014 </p>
+</footer>
+</body>
+</html>
+

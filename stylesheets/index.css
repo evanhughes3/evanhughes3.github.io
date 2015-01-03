@@ -19,6 +19,7 @@
 .description {
   display: inline-block;
   float: right;
+  clear: both;
   /* border: 2px solid black; */
   position: relative;
   top: 80px;
