@@ -10,6 +10,7 @@ article, aside, footer, header, nav, section {
 
 html {
   font-family: sans-serif;
+  width: 100%;
 }
 
 body {
@@ -90,11 +91,4 @@ footer a {
 
 footer a:hover {
     color: #800000;
-}
-
-
-.main {
-height: 300px;
-width: 100%;
-background: white;
 }
