@@ -115,7 +115,7 @@ end
 
 jimmy = Student.new("Jimmy", 15, 9, "drums")
 </pre>
-          <p>Now I have a student named "Jimmy", who is holding on to values that distiguish him.  I want to be able to easily access those values, so that if I forget what he does I can find out easily.  I'll create a method called <code>student_info</code>, which will give me all of the values, and then individual ones if I just want one value.</p>
+          <p>Now I have a student named "Jimmy", who is holding on to values that distinguish him.  I want to be able to easily access those values, so that if I forget what he does I can find out easily.  I'll create a method called <code>student_info</code>, which will give me all of the values, and then individual ones if I just want one value.</p>
 <pre>
 class Student
 
@@ -151,7 +151,7 @@ jimmy.instrument => Jimmy plays the drums.
 jimmy.age => Jimmy is 15.
 jimmy.grade => Jimmy is in 9th grade.
 </pre>
-          <p>At the end of your class, you have to write a teacher report on your students, so I found it useful to write some comments down, so that at the end of the year, you could look back and see how your students behaved, if they we're responsible, completed assignments, etc.  So I found it benificial to write comments  about each student.  A good way to do this is to use an <code>attr_accessor </code>method, which creates a readable and writable method for your instance variable.  I'll call mine <code>comments</code>.  </p>
+          <p>At the end of your class, you have to write a teacher report on your students, so I found it useful to write some comments down, so that at the end of the year, you could look back and see how your students behaved, if they we're responsible, completed assignments, etc.  So I found it beneficial to write comments  about each student.  A good way to do this is to use an <code>attr_accessor </code>method, which creates a readable and writable method for your instance variable.  I'll call mine <code>comments</code>.  </p>
 <pre>
 class Student
   attr_accessor :comments

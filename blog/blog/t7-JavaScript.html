@@ -97,7 +97,7 @@
 
         <p>An object contains a property and a property value.  This can be compared to a hash in that it has a key(property) and value(property value).  The difference (in what I gather thus far) is that objects are naturally a little easier to manipulate data.
 
-        <p>In ruby, I think of arrays and hashes as containers that hold information.  If you want to use a method, you have to use a ".method" on the container, but the two seem like two seperate peices.  I'll create an object and a hash side by side to see the difference<p>
+        <p>In ruby, I think of arrays and hashes as containers that hold information.  If you want to use a method, you have to use a ".method" on the container, but the two seem like two separate pieces.  I'll create an object and a hash side by side to see the difference<p>
 
 <pre>
 (javascript object)
@@ -137,7 +137,7 @@ puts menu["appetizer"] # => ceviche
 
       <p>Alright, here's a little challenge.  Say you want to write a program that changes your menu every week.  Look up to the object above, and notice that we have one property value in each property.  Why not make it more?  Objects can contain arrays and property values, so lets add some more dishes to our menu.</p>
 
-      <p>Now lets say we want to randomly select a dish each week.  We can use this little peice of code to select a random element in an array: <code>array[Math.floor(Math.random()*menu.desert.length)]</code>  This means, for <code>array</code> at index number[?] create a random number, multiply that by the length of the array, and round down to the nearest whole number, and give us back the element at that index number.  Let's call this function four times and see what this month's menu will look like:
+      <p>Now lets say we want to randomly select a dish each week.  We can use this little piece of code to select a random element in an array: <code>array[Math.floor(Math.random()*menu.desert.length)]</code>  This means, for <code>array</code> at index number[?] create a random number, multiply that by the length of the array, and round down to the nearest whole number, and give us back the element at that index number.  Let's call this function four times and see what this month's menu will look like:
 <pre>
 var menu = {
   appetizer: ['salad', 'ceviche', 'chips and guac'],
@@ -190,7 +190,7 @@ console.log(menu);
 //   cocktails: 'margarita' }
 </pre>
 
-      <p>Pretty cool.  I have found it a lot easier to manipute objects than hashes.  In a way object are like a hash and a class combined? - maybe that's a reach, but you get the idea...</p>
+      <p>Pretty cool.  I have found it a lot easier to manipulate objects than hashes.  In a way object are like a hash and a class combined? - maybe that's a reach, but you get the idea...</p>
 
 
 

@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
          <p>This week was all about using ruby's Enumerable methods.  These methods can be your friend, but at first they are likely to be your enemy.  For me at least, it was tough to simply wrap my head around what it is they actually do.  I hope this will clear that up.</p>
-          <p> Enumerable methods directly corraltae to "each."   What this means is that every enumerable method goes through an array or a hash each peice at a time.  Let me show you an example of an enumerable method "group_by," and hopefully it will make more sense.</p>
+          <p> Enumerable methods directly correlate to "each."   What this means is that every enumerable method goes through an array or a hash each piece at a time.  Let me show you an example of an enumerable method "group_by," and hopefully it will make more sense.</p>
 
           <h3><code>group_by</code></h3>
           <p>When scanning the <u><a href="http://ruby-doc.org/core-2.1.0/Enumerable.html">ruby docs </a></u>page for an enumerable method, it is especially important to pay attention to what the <strong>input</strong> and <strong>output</strong> are.  In the case of <code>group_by</code>, you can give it an array or a hash, but the output will always be a hash.  It will return to you a key(group) and values (things that we're grouped).  This is really cool, let me show you an example.
@@ -111,7 +111,7 @@
                     >> dwarfs.group_by {|name| name.length}<br>
                     => {3=>["Doc"], 6=>["Grumpy", "Sleepy", "Sneezy"], 5=>["Happy", "Dopey"], 7=>["Bashful"]}</code></p>
 
-              <p>So what just happened?  First I used a handy little trick, the <code>%w</code> turns my list of names in an array, saving me from having the use commas and quotation marks (awesome!).  I then asked <code>group_by</code> to group by the <code>.length</code> of each name.  The result was a hash, with the key being the number of letters, and the values being the names with that amount of letters.  Ok, now to show you how to use it, let's save this hash in a new hash called <code>dwarf_hash</code>.  And, I forget, which dwarfs have a name 6 letters long?  Do any have 8?</p>
+              <p>So what just happened?  First I used a handy little trick, the <code>%w</code> turns my list of names in an array, saving me from having the use commas and quotation marks (awesome!).  I then asked <code>group_by</code> to group by the <code>.length</code> of each name.  The result was a hash, with the key being the number of letters, and the values being the names with that amount of letters.  OK, now to show you how to use it, let's save this hash in a new hash called <code>dwarf_hash</code>.  And, I forget, which dwarfs have a name 6 letters long?  Do any have 8?</p>
 
               <p><code>>> dwarf_hash = dwarfs.group_by {|name| name.length}<br>
                           => {3=>["Doc"], 6=>["Grumpy", "Sleepy", "Sneezy"], 5=>["Happy", "Dopey"], 7=>["Bashful"]}<br>
