@@ -51,8 +51,12 @@ h6 {
     font-size: 5em;
 }
 
-.intro-message h3 a {
+.intro-message a {
     text-decoration: none;
+}
+
+.drummer-link {
+  color: white;
 }
 
 .intro-divider {
